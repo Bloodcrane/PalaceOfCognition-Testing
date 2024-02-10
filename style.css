@@ -151,7 +151,7 @@ header {
     border: 1px solid #ccc;
     padding: 10px;
     overflow: hidden;
-    background-color: #929292;
+    background-color: #2b272467;
     text-shadow: 2px 2px 5px black;
     background-image: url('./style-Images/noise-dark.png'); 
     color: #fff; 
@@ -220,6 +220,8 @@ header {
 @media screen and (max-width: 500px) {
     #headerButton {
         padding: 6px 15px;
+        font-size: 15px;
+        margin-right: 2px;
     }
     header{
         display:block;
