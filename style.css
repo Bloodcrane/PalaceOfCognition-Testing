@@ -242,6 +242,10 @@ header {
         display:block;
     }
 
+    .container2{
+        left: 55%;
+    }
+
     .container{
         max-width: 490px;
         width: 400px;
