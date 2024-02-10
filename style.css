@@ -35,8 +35,8 @@ body {
 .container2 {
     position: absolute; 
     top: calc(100% + 10px); 
-    left: 5%; 
-    transform: translate(-5%, 0%); 
+    left: 50%; 
+    transform: translate(-50%, 0%); 
     max-width: 600px; 
     padding: 50px; 
     border-radius: 1cm; 
