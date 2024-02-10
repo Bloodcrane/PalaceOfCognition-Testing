@@ -85,7 +85,7 @@ var articles = [
       description.textContent = article.description;
   
       var link = document.createElement("a");
-      link.href = article.link;
+      link.href = article.link; 
       link.textContent = "მეტის ნახვა";
       link.id = "ahref"
   

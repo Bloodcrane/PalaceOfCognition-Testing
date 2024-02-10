@@ -1,4 +1,4 @@
-@font-face{
+@font-face{  
     font-family: mainFont;
     src: url(fonts/bpg_glaho.ttf);
 }
@@ -34,11 +34,12 @@ body {
 
 .container2 {
     position: absolute; 
-    top: calc(100% + 10px); 
-    left: 50%; 
-    transform: translate(-50%, 0%); 
+    
+    top: calc(100% + 10px);   
+    left: 50%;  
+    transform: translate(-50%, 0%);  
     max-width: 600px; 
-    padding: 50px; 
+    padding: 50px;  
     border-radius: 1cm; 
     box-shadow: 0 0 0 2px #ffffff59; 
     box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.349); 

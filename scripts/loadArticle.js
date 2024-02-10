@@ -16,7 +16,7 @@ const articles = [
         author: "ირაკლი ჯაბუა",
         image: "https://media.discordapp.net/attachments/1205803046123216908/1205804445481443328/tolstoy.jpg?ex=65d9b3e6&is=65c73ee6&hm=861e15946914ee3503e33c95ae49edcd47145ecf74e749f7ef23c47169b41ad6&=&format=webp&width=749&height=468",
         content: "./articleTxts/tolstoy.txt"
-    },
+    }, 
     {
         title: "ჰერმან ჰესეს „ტრამალის მგელი”",
         author: "ნიკოლოზ მეტონიძე",
