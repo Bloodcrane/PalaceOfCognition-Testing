@@ -16,19 +16,20 @@ body {
 }
 
 .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 400px;
-    padding: 20px;
-    border-radius: 1cm;
-    box-shadow: 0 0 0 2px #ffffff59;
-    box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.349);
+    position: absolute; 
+    top: calc(100% + 10px); 
+    left: 50%; 
+    transform: translate(-50%, 0%); 
+    max-width: 500px; 
+    padding: 20px; 
+    border-radius: 1cm; 
+    box-shadow: 0 0 0 2px #ffffff59; 
+    box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.349); 
     background-image: url('./style-Images/noise-dark.png'), linear-gradient(to top, #383431, #69615b);
-    text-align: center;
-    z-index: 10;
-    overflow: hidden;
+    text-align: center; 
+    z-index: 10;  
+    top: 24%; 
+    overflow: hidden; 
 }
 
 .container2 {
@@ -38,12 +39,10 @@ body {
     transform: translate(-50%, 0%); 
     max-width: 500px; 
     padding: 20px; 
-    background-color: #383431; 
     border-radius: 1cm; 
     box-shadow: 0 0 0 2px #ffffff59; 
-
     box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.349); 
-    background-image: url('./style-Images/noise-dark.png'); 
+    background-image: url('./style-Images/noise-dark.png'), linear-gradient(to top, #383431, #69615b);
     text-align: center; 
     z-index: 10;  
     top: 24%; 
@@ -226,12 +225,6 @@ header {
     header{
         display:block;
     }
-    
-    .container{
-        max-width: 490px;
-        top: 100%;
-        top: 60%;
-    }
 
     .headerButtons{
         flex-direction: row;
@@ -245,23 +238,12 @@ header {
 }
 
 @media screen and (max-width: 856px){
-    .container{
-        max-width: 490px;
-        width: 490px;
-        top: 60%;
-        
-    }
     .articleFull{
         top: 60%;
     }
 }
 
 @media screen and (max-width: 660px){
-    .container{
-        max-width: 490px;
-        top: 60%;
-    }
-
     .articleFull{
         top: 60%;
         max-width: 600px;
@@ -277,14 +259,6 @@ header {
     }
 }
 
-@media screen and (max-width: 450px){
-    .container{
-        max-width: 490px;
-        width: 360px;
-        top: 60%;
-    }
-}
-
 @media screen and (max-width: 611px) {
     #headerButton {
         text-align: center;
@@ -292,12 +266,6 @@ header {
     }
     header{
         display:block;
-    }
-
-    .container{
-        max-width: 490px;
-        width: 400px;
-        top: 65%;
     }
 
     .articleFull{
