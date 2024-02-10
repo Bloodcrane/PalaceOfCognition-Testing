@@ -11,6 +11,8 @@ body {
     display: flex;
     margin: 0px;
     padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .container {
@@ -26,6 +28,7 @@ body {
     background-image: url('./style-Images/noise-dark.png'), linear-gradient(to top, #383431, #69615b);
     text-align: center;
     z-index: 10;
+    overflow: hidden;
 }
 
 .container2 {
@@ -44,6 +47,7 @@ body {
     text-align: center;
     z-index: 10; 
     top: 24%;
+    overflow: hidden;
 }
 
 header {
