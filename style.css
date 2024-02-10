@@ -32,21 +32,22 @@ body {
 }
 
 .container2 {
-    position: absolute;
-    top: calc(100% + 10px);
-    left: 50%;
-    transform: translate(-50%, 0%);
-    max-width: 800px;
-    padding: 20px;
-    background-color: #383431;
-    border-radius: 1cm;
-    box-shadow: 0 0 0 2px #ffffff59;
-    box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.349);
-    background-image: url('./style-Images/noise-dark.png');
-    text-align: center;
-    z-index: 10; 
-    top: 24%;
-    overflow: hidden;
+    position: absolute; 
+    top: calc(100% + 10px); 
+    left: 50%; 
+    transform: translate(-50%, 0%); 
+    max-width: 500px; 
+    padding: 20px; 
+    background-color: #383431; 
+    border-radius: 1cm; 
+    box-shadow: 0 0 0 2px #ffffff59; 
+    
+    box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.349); 
+    background-image: url('./style-Images/noise-dark.png'); 
+    text-align: center; 
+    z-index: 10;  
+    top: 24%; 
+    overflow: hidden; 
 }
 
 header {
