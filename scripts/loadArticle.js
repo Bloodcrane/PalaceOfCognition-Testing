@@ -82,13 +82,25 @@ function loadArticle(index) {
     document.getElementById("articleImage").src = article.image;
     document.title = "Palace Of Cognition - " + article.title + " " + " - " + article.author;
 
-    document.querySelector('meta[property="og:title"]').setAttribute("content", article.title);
-    document.querySelector('meta[property="og:image"]').setAttribute("content", article.image);
-    document.querySelector('meta[property="og:description"]').setAttribute("content", article.description);
+    // document.querySelector('meta[property="og:title"]').setAttribute("content", article.title);
+    // document.querySelector('meta[property="og:image"]').setAttribute("content", article.image);
+    // document.querySelector('meta[property="og:description"]').setAttribute("content", article.description);
 
-    document.querySelector('meta[property="og:title"]').content = article.title;
-    document.querySelector('meta[property="og:image"]').content = article.image;
-    document.querySelector('meta[property="og:description"]').content = article.description;
+    // document.querySelector('meta[name="title"]').setAttribute("content", article.title);
+    // document.querySelector('meta[name="image"]').setAttribute("content", article.image);
+    // document.querySelector('meta[name="description"]').setAttribute("content", article.description);
+
+    const ogTitleMeta = document.getElementById('ogTitle');
+    const ogImageMeta = document.getElementById('ogImage');
+    const ogDescriptionMeta = document.getElementById('ogDescription');
+
+    if (ogTitleMeta && ogImageMeta && ogDescriptionMeta) {
+        ogTitleMeta.setAttribute('content', article.title);
+        ogImageMeta.setAttribute('content', article.image);
+        ogDescriptionMeta.setAttribute('content', article.content); // Assuming description is stored in article.content
+    } else {
+        console.error('Failed to find Open Graph meta tags.');
+    }
 
     fetch(article.content)
         .then(response => {
