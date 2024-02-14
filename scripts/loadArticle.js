@@ -95,6 +95,9 @@ function loadArticle(index) {
         })
         .then(content => {
             document.getElementById("articleContent").textContent = content;
+            document.querySelector('meta[property="og:title"]').setAttribute('content', article.title);
+            document.querySelector('meta[property="og:image"]').setAttribute('content', article.image);
+            document.querySelector('meta[property="og:description"]').setAttribute('content', article.description);
         })
         .catch(error => {
             console.error('There was a problem fetching the article content:', error);
