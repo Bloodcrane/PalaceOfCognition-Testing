@@ -97,7 +97,7 @@ function loadArticle(index) {
     if (ogTitleMeta && ogImageMeta && ogDescriptionMeta) {
         ogTitleMeta.setAttribute('content', article.title);
         ogImageMeta.setAttribute('content', article.image);
-        ogDescriptionMeta.setAttribute('content', article.content); // Assuming description is stored in article.content
+        ogDescriptionMeta.setAttribute('content', article.description);
     } else {
         console.error('Failed to find Open Graph meta tags.');
     }
