@@ -223,7 +223,7 @@ header {
         font-size: 13px;
     }
     header{
-        display:block;
+        display:block; 
     }
 
     .headerButtons{

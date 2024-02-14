@@ -52,7 +52,7 @@ var articles = [
         link: "./article.html?index=6"
     },
     {
-        header: "როკო კეკენაძე - „12 განრისხებული მამაკაცი“ - განხილვა",
+        header: "როკო კეკენაძე - „12 განრისხებული მამაკაცი“ - განხილვა", 
         image: "https://media.discordapp.net/attachments/1205803046123216908/1205804343815835658/12-Angry-Men-thumbnail.jpg?ex=65d9b3ce&is=65c73ece&hm=eaab838fdc06b38958acaa2317626a5f310eac35413a58599c2e40690be27540&=&format=webp&width=308&height=467",
         description: "სიდნი ლუმეტის 1957 წლის ამერიკული ფილმი „12 განრისხებული მამაკაცი” გვიამბობს ერთ ბიჭზე, რომელსაც ბრალად მამის მკვლელობა ედება...",
         link: "./article.html?index=7"

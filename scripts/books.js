@@ -44,7 +44,7 @@ var articles = [
   // Function to dynamically create articles
   function createArticles() {
     console.log("Creating content...");
-    var container = document.getElementById("contentContainer");
+    var container = document.getElementById("contentContainer"); 
     console.log("Container:", container);
   
     articles.forEach(function(article) {

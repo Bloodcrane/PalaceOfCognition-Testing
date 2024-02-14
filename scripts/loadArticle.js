@@ -68,7 +68,7 @@ const articles = [
       },
 ];
 
-function loadArticleFromQuery() {
+function loadArticleFromQuery() { 
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const index = parseInt(urlParams.get('index') || 0);
