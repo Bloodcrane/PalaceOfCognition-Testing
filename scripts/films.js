@@ -81,8 +81,7 @@ var articles = [
   
       var link = document.createElement("a");
       link.href = article.link;
-      link.textContent = "მეტის ნახვა";
-      link.id = "ahref"
+      link.textContent = "";
   
       // Append elements to articleDiv
       articleDiv.appendChild(header);

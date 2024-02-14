@@ -59,6 +59,13 @@ const articles = [
         image: "https://media.discordapp.net/attachments/1205803046123216908/1205804395389001738/kafka.jpg?ex=65d9b3da&is=65c73eda&hm=c4d255326c386022ed6725b9f2e882056d5f8e7b5e7de17890a4bbfe11e2952a&=&format=webp&width=624&height=468",
         content: "./articleTxts/kafkametamorphosis.txt"
     },
+    {
+        title: "„რამოდენიმე ინტერვიუ პირად საკითხებზე“ - რეცენზია",
+        author: "მარიამ კუტალაძე",
+        image: "https://media.discordapp.net/attachments/1205803046123216908/1207420299600072824/sip.jpg?ex=65df94c8&is=65cd1fc8&hm=38c5fabee93633110f1becb3138c6242b0e09937c526475ae0d3ca9f4f583b77&=&format=webp",
+        description: "„რამდენიმე ინტერვიუ პირად საკითხებზე“ - რეჟისორ ლანა ღოღობერიძის დრამატული მხატვრული ფილმია...",
+        content: "./articleTxts/ramodenimeinterviu.txt"
+      },
 ];
 
 function loadArticleFromQuery() {
@@ -74,6 +81,10 @@ function loadArticle(index) {
     document.getElementById("articleAuthor").textContent = article.author;
     document.getElementById("articleImage").src = article.image;
     document.title = "Palace Of Cognition - " + article.title + " " + " - " + article.author;
+
+    document.querySelector('meta[property="og:title"]').setAttribute('content', article.title);
+    document.querySelector('meta[property="og:image"]').setAttribute('content', article.image);
+    document.querySelector('meta[property="og:description"]').setAttribute('content', article.description);
 
     fetch(article.content)
         .then(response => {

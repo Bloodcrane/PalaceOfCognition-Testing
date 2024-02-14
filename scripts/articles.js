@@ -63,6 +63,12 @@ var articles = [
         description: "ფრანც კაფკას ნოველას ,,გარდასახვა” დღევანდელ დღეს დიდი ადგილი უკავია მკითხველთა გულებსა და ლიტერატურაში. ...",
         link: "./article.html?index=8"
     },
+    {
+      header: "მარიამ კუტალაძე - „რამოდენიმე ინტერვიუ პირად საკითხებზე“ - რეცენზია",
+      image: "https://media.discordapp.net/attachments/1205803046123216908/1207420342092570696/Screenshot_2024-02-15_001514.png?ex=65df94d2&is=65cd1fd2&hm=ca70674a1bc8f3fafa730f08e577a0c21e2777c1713fe3db419cbfe3fcbc82fa&=&format=webp&quality=lossless&width=315&height=468",
+      description: "„რამდენიმე ინტერვიუ პირად საკითხებზე“ - რეჟისორ ლანა ღოღობერიძის დრამატული მხატვრული ფილმია...",
+      link: "./article.html?index=9"
+    },
   ];
   
   function createArticles() {
