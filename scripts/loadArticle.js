@@ -82,9 +82,13 @@ function loadArticle(index) {
     document.getElementById("articleImage").src = article.image;
     document.title = "Palace Of Cognition - " + article.title + " " + " - " + article.author;
 
-    document.head.querySelector('meta[name="title"]').setAttribute("content", article.title);
-    document.head.querySelector('meta[name="image"]').setAttribute("content", article.image);
-    document.head.querySelector('meta[name="description"]').setAttribute("content", article.description);
+    document.querySelector('meta[property="og:title"]').setAttribute("content", article.title);
+    document.querySelector('meta[property="og:image"]').setAttribute("content", article.image);
+    document.querySelector('meta[property="og:description"]').setAttribute("content", article.description);
+
+    document.querySelector('meta[property="og:title"]').content = article.title;
+    document.querySelector('meta[property="og:image"]').content = article.image;
+    document.querySelector('meta[property="og:description"]').content = article.description;
 
     fetch(article.content)
         .then(response => {
