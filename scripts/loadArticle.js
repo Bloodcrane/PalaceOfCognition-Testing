@@ -82,10 +82,6 @@ function loadArticle(index) {
     document.getElementById("articleImage").src = article.image;
     document.title = "Palace Of Cognition - " + article.title + " " + " - " + article.author;
 
-    document.querySelector('meta[name="title"]').setAttribute("content", article.title);
-    document.querySelector('meta[name="image"]').setAttribute("content", article.image);
-    document.querySelector('meta[name="description"]').setAttribute("content", article.description);
-
     fetch(article.content)
         .then(response => {
             if (!response.ok) {
@@ -117,5 +113,8 @@ function loadArticle(index) {
     }    
 }
 
+document.querySelector('meta[name="title"]').setAttribute("content", articles[index].title);
+document.querySelector('meta[name="image"]').setAttribute("content", articles[index].image);
+document.querySelector('meta[name="description"]').setAttribute("content", articles[index].description);
 
 window.onload = loadArticleFromQuery;
