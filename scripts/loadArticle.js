@@ -80,11 +80,11 @@ function loadArticle(index) {
     document.getElementById("articleTitle").textContent = article.title;
     document.getElementById("articleAuthor").textContent = article.author;
     document.getElementById("articleImage").src = article.image;
-    document.title = "Palace Of Cognition - " + article.title + " - " + article.author;
+    document.title = "Palace Of Cognition - " + article.title + " " + " - " + article.author;
 
-    document.querySelector('meta[property="og:title"]').setAttribute('content', article.title);
-    document.querySelector('meta[property="og:image"]').setAttribute('content', article.image);
-    document.querySelector('meta[property="og:description"]').setAttribute('content', article.content);
+    document.querySelector('meta[name="title"]').setAttribute("content", article.title);
+    document.querySelector('meta[name="image"]').setAttribute("content", article.image);
+    document.querySelector('meta[name="description"]').setAttribute("content", article.description);
 
     fetch(article.content)
         .then(response => {
@@ -95,7 +95,6 @@ function loadArticle(index) {
         })
         .then(content => {
             document.getElementById("articleContent").textContent = content;
-            document.querySelector('meta[property="og:description"]').setAttribute('content', content);
         })
         .catch(error => {
             console.error('There was a problem fetching the article content:', error);
